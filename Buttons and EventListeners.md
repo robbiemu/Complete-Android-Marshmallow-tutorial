@@ -19,6 +19,7 @@ This can be done in 2 ways.
 
 1. onclickListener in `Activity` or `Fragment`
 2. using an "inner class" onClickListener in the `Activity` or `Fragment` 
+3. specifying it in the xml layout for the `activity` or `fragment`
 
 You must also add the button to the layout, which can be done in two ways:
 
@@ -76,3 +77,21 @@ The second way to set up an event is to instead declare the onClick event direct
     /*...*/
 
 A difference with this implementation is that, with multiple buttons, the `onClick` method does not automatically trigger a shared method. 
+
+#### specifying it in the xml layout for the `activity` or `fragment`
+
+The third way to set up an event is directly in the layout xml.  You add the method name to be executed as the parameterof `android:onClick`:
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button3"
+        android:id="@+id/button3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="some_method"/>
+ 
+This specifies the method in the associated `activity` or `fragment` for the xml layout. That function must still be defined, and it must accept a `View` parameter:
+
+    public void some_method(View v) { /*...*/ }
+
