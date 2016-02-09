@@ -1,6 +1,9 @@
 package xyz.selfenrichment.robertotomas.buttonsandeventlisteners;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -30,14 +33,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-/*        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /* method 2 */
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, "This is the snackbar", Snackbar.LENGTH_LONG)
+                        .setAction("DISMISS", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v){
+                                v.setVisibility(View.INVISIBLE);
+
+                                String vName = getResources().getResourceName(v.getId());
+                                String [] vna = vName.split("/");
+                                vName = vna[vna.length-1];
+                                Log.v(LOG_TAG, String.format("%s was clicked!", vName));
+                            }
+                        }).setActionTextColor(Color.RED).show();
             }
-        }); */
+        });
     }
 
     @Override

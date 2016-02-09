@@ -3,4 +3,5 @@
     <string name="action_settings">Settings</string>
     <string name="button1">click me!</string>
     <string name="button2">second button</string>
+    <string name="button3">Third Method</string>
 </resources>
