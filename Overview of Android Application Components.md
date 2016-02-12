@@ -17,4 +17,4 @@ An intent specifies a service to call (for a given intent tag) from the broadcas
 
 There are two types of intents: _explicit intents_ and _implicit intents_.
 
-[continuation](https://github.com/robbiemu/Intents.md)
+[continuation](https://github.com/robbiemu/Complete-Android-Marshmallow-tutorial/blob/master/Intents.md)
