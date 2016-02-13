@@ -13,20 +13,17 @@ import android.widget.Toast;
 
 public class CustomToastActivity extends AppCompatActivity {
 
-    private View toast_view;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_toast);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        LayoutInflater inflater = getLayoutInflater();
-        toast_view = inflater.inflate(R.layout.toast_custom_toast, (ViewGroup)findViewById(R.id.toast_layout_root));
     }
 
     public void showToast(View v) {
+        LayoutInflater inflater = getLayoutInflater();
+        View toast_view = inflater.inflate(R.layout.toast_custom_toast, (ViewGroup)findViewById(R.id.toast_layout_root));
 
         Toast t = new Toast(CustomToastActivity.this);
         t.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
