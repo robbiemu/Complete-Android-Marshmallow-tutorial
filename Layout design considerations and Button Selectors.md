@@ -45,6 +45,8 @@ Such that _mdpi_ displays do not modify the dp value (and so `dp = px`), and _xh
 
 If we declare sizes in _px_ they will be literal, and will vary significantly from device to device.
 
+_note: with devices like tablets that are meant to be much larger, isntead of just scaling the views appropriately, one can use [Framgments](http://developer.android.com/guide/practices/tablets-and-handsets.html) to create partial views and the partition the screen with them as desired. This way more information is visible only on larger screens, while navigating to the other fragments on smaller screens would require actual navigation, and those elements owuld not be on the default activity of the app._
+
 #### App icon dimensions
 
 ![](http://i.stack.imgur.com/HYLWx.png)
@@ -94,6 +96,8 @@ Note these are _dp_ values. A full px table would be like these:
 and so on..
 
 ### Layout and images for multiple screens
+
+_note: When specifying layout and other variations in **xml**, it is important to never change the ids of the elements from one directory's copy to another_
 
 * `res/drawable` - the default image (if there was no dpi keyword match)
 * `res/drawable-ldpi` - for ldpi
@@ -149,3 +153,5 @@ The drawables must be present, and the layout using the selector definitions mus
         android:text="@string/a_button"
         android:id="@+id/a_button"
         android:background="@drawable/button_states" />
+        
+Selectors can be used for out `View` ui objects, and can select mroe than simple states.
