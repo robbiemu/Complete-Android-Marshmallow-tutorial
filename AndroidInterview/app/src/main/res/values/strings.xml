@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android Interview</string>
+    <string name="action_settings">Settings</string>
+    <string name="top_button">Simple Questions</string>
+    <string name="bottom_button">Rate our app</string>
+    <string name="second_button">Tough Questions</string>
+    <string name="third_button">See our other apps</string>
+</resources>
