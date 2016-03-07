@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Text To Speech Demo</string>
+    <string name="speak_button_label">Read it!</string>
+    <string name="stop_button_label">Stop!</string>
+</resources>

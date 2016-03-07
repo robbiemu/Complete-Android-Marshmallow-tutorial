@@ -18,4 +18,3 @@ Arrays can also be stored in `strings.xml` using a `string array` element like:
 `R.array.foo` will access this array.
 
 All such strings and string arrays must be defined within an outer `<resources>` tag.
- 
