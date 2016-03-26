@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/method_one_label"
+        android:id="@+id/textView" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_method_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:id="@+id/radio_button_method_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/method_one"
+            android:button="@drawable/custom_button" />
+
+        <RadioButton android:id="@+id/radio_button_method_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/method_two"
+            android:button="@drawable/custom_button"
+            android:checked="false" />
+
+        <RadioButton android:id="@+id/radio_button_method_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/method_three"
+            android:button="@drawable/custom_button"
+            android:checked="false" />
+    </RadioGroup>
+
+</LinearLayout>

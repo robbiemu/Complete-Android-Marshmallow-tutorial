@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RadioButtonMethods</string>
+    <string name="method_one">method 1 — implemented in Activity</string>
+    <string name="method_two">method 2 — inner class</string>
+    <string name="method_three">method 3 — in xml</string>
+    <string name="method_one_label">Choose your method</string>
+    <string name="extra_label">Just some random radiobox to match the content in class</string>
+    <string name="label_extra_option_one">yes</string>
+    <string name="label_extra_option_two">no</string>
+</resources>
