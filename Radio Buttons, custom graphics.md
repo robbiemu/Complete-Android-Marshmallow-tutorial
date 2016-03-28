@@ -6,7 +6,7 @@
 3 ways to handle radio button input event
 
 1. implementing onCheckedChangeListener in Activity
-2. Using a [OnCheckedChangeListener](](http://developer.android.com/reference/android/widget/RadioGroup.OnCheckedChangeListener.html) as an inner class in the (views in the) activity
+2. Using a [OnCheckedChangeListener](http://developer.android.com/reference/android/widget/RadioGroup.OnCheckedChangeListener.html) as an inner class in the (views in the) activity
 3. Handling the button through the XML layout by onClick attribute
 
 ### onCheckedChangeListener in Activity
